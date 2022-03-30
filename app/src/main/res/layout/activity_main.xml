@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:columnCount="2"
+    android:orientation="vertical"
+    android:rowCount="6"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_margin="10dp"
+        android:autofillHints="phone"
+        android:background="@color/edtAmount"
+        android:elevation="@dimen/elevation"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtTipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_margin="10dp"
+        android:text="Percent" />
+
+    <SeekBar
+        android:id="@+id/tipSeekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:max="30"
+        android:progress="15"
+        android:progressTint="#FF9800"
+        android:thumbTint="#FF9800" />
+
+    <TextView
+        android:id="@+id/txtCalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Tip" />
+
+    <TextView
+        android:id="@+id/txtValueTip"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#8FFFC107"
+        android:elevation="@dimen/elevation"
+        android:text="Tip"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Total" />
+
+    <TextView
+        android:id="@+id/txtTotalValue"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#8FFFC107"
+        android:elevation="@dimen/elevation"
+        android:text="Total"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <Switch
+        android:id="@+id/swNightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        android:text="Night Mode" />
+</GridLayout>
